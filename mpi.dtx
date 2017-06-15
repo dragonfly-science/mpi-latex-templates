@@ -195,10 +195,13 @@
 %    \begin{macrocode}
 %<*mpi-aebr|mpi-far>
 \RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{\thesection}{1em}{\thesection.\hspace{0.8em}}
+\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{\thesection.}{1em}{}
+% \titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{\thesection.\hspace{0.8em}}
 \titleformat{name=\section,numberless}{\normalfont\bfseries\sffamily\uppercase}{}{0em}{}
-\titleformat{\subsection}{\normalfont\bfseries\sffamily}{\thesubsection}{1em}{\thesubsection\hspace{0.8em}}
-\titleformat{\subsubsection}{\normalfont\bfseries\sffamily}{\thesubsubsection}{1em}{\thesubsubsection\hspace{0.8em}}
+\titleformat{\subsection}{\normalfont\bfseries\sffamily}{\thesubsection}{1em}{}
+% \titleformat{\subsection}{\normalfont\bfseries\sffamily}{\thesubsection\hspace{0.8em}}
+\titleformat{\subsubsection}{\normalfont\bfseries\sffamily}{\thesubsubsection}{1em}{}
+% \titleformat{\subsubsection}{\normalfont\bfseries\sffamily}{\thesubsubsection\hspace{0.8em}}
 \titlespacing{\section}{0pt}{\baselineskip}{0pt}
 \titlespacing{\subsection}{0pt}{\baselineskip}{0pt}
 \titlespacing{\subsubsection}{0pt}{\baselineskip}{0pt}
@@ -460,7 +463,7 @@ Telephone: 0800 00 83 33\\
 Facsimile: 04-894 0300
 
 This publication is also available on the Ministry for Primary Industries websites at:\\
-\url{http://www.mpi.govt.nz/news-resources/publications.aspx}\\
+\url{http://www.mpi.govt.nz/news-and-resources/publications}\\
 \url{http://fs.fish.govt.nz} go to Document library/Research reports
 
 \textbf{\copyright{} Crown Copyright - Ministry for Primary Industries}
