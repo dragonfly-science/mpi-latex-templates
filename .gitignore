@@ -38,12 +38,12 @@
 mpi.sty
 *.cls
 *.substvars
-debian/mpi-latex-templates
-debian/files
+package/debian/mpi-latex-templates
+package/debian/files
 *.run.xml
 *-self.bib
 *-blx.bib
 *.bcf
 *.xwm
-debhelper-build-stamp
-mpi-latex-templates_*
+package/debhelper-build-stamp
+package/mpi-latex-templates_*

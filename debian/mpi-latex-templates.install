@@ -1,7 +1,0 @@
-*.cls /usr/share/texlive/texmf-dist/tex/latex/mpi
-*.sty /usr/share/texlive/texmf-dist/tex/latex/mpi
-biblatex-mpi/ /usr/share/texlive/texmf-dist/tex/latex/
-AEBR.jpg /usr/share/texlive/texmf-dist/tex/latex/mpi
-FAR.jpg /usr/share/texlive/texmf-dist/tex/latex/mpi
-
-
