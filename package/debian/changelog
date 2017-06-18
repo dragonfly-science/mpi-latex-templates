@@ -1,3 +1,9 @@
+mpi-latex-templates (1.11) xenial; urgency=medium
+
+  * Refactor
+
+ -- Edward Abraham <edward@dragonfly.co.nz>  Fri, 16 Jun 2017 17:35:56 +1300
+
 mpi-latex-templates (1.10) xenial; urgency=medium
 
   * Fix titling

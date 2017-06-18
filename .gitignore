@@ -47,3 +47,4 @@ package/debian/files
 *.xwm
 package/debhelper-build-stamp
 package/mpi-latex-templates_*
+mpi-latex-templates_*
