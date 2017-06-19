@@ -45,6 +45,6 @@ package/debian/files
 *-blx.bib
 *.bcf
 *.xwm
-package/debhelper-build-stamp
+package/debian/debhelper-build-stamp
 package/mpi-latex-templates_*
 mpi-latex-templates_*
