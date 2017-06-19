@@ -29,8 +29,12 @@ package/.build: latex/mpi.pdf \
 
 .PHONY: clean
 clean:
-	rm -f  examples/*{.log,.aux,.out,.bbl,.pdf,.blg,.bcf,.run.xml,.toc,-self.bib] && \
-	rm -f latex/*{.cls,.idx,.sty,.fdb_latexmk,.log,.fls,.ind,.out,.aux,.glo,.pdf,.toc} && \
-	rm -rf package/debian/mpi-latex-templates/ && \
-	rm -f package/dragonfly-mpi* && \
-	rm -f package/debian/debhelper-build-stamp 
+	rm -f  examples/*.log examples/*.aux examples/*.out examples/*.bbl examples/*.pdf examples/*.blg \
+		examples/*.bcf examples/*.run.xml examples/*.toc examples/*-self.bib  examples/*.nav examples/*.snm \
+		examples/*.fdb_latexmk  examples/*.fls
+	rm -f latex/*.cls latex/*.idx latex/*.sty  latex/*.fdb_latexmk latex/*.log latex/*.fls latex/*.ind \
+		latex/*.out latex/*.aux latex/*.glo latex/*.pdf latex/*.toc latex/*.ilg
+	rm -rf package/debian/mpi-latex-templates/ 
+	rm -f package/mpi-latex* package/debian/mpi-latex-templates.substvars package/debian/files
+	rm -f package/debian/debhelper-build-stamp package/debian/mpi-latex-templates.debhelper.log 
+	rm -f mpi-latex-templates_*
