@@ -195,10 +195,10 @@
 %    \begin{macrocode}
 %<*mpi-aebr|mpi-far>
 \RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{\thesection}{1em}{\thesection.\hspace{0.8em}}
+\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{}{0em}{\thesection.\hspace{0.8em}}
 \titleformat{name=\section,numberless}{\normalfont\bfseries\sffamily\uppercase}{}{0em}{}
-\titleformat{\subsection}{\normalfont\bfseries\sffamily}{\thesubsection}{1em}{\thesubsection\hspace{0.8em}}
-\titleformat{\subsubsection}{\normalfont\bfseries\sffamily}{\thesubsubsection}{1em}{\thesubsubsection\hspace{0.8em}}
+\titleformat{\subsection}{\normalfont\bfseries\sffamily}{}{0em}{\thesubsection\hspace{0.8em}}
+\titleformat{\subsubsection}{\normalfont\bfseries\sffamily}{}{0em}{\thesubsubsection\hspace{0.8em}}
 \titlespacing{\section}{0pt}{\baselineskip}{0pt}
 \titlespacing{\subsection}{0pt}{\baselineskip}{0pt}
 \titlespacing{\subsubsection}{0pt}{\baselineskip}{0pt}
@@ -236,7 +236,7 @@
 \RequirePackage{csquotes}
 \RequirePackage{polyglossia}
 \setdefaultlanguage[variant=newzealand]{english}
-\RequirePackage[style=mpi,backend=biber]{biblatex}
+\RequirePackage[style=mpi,backend=biber,sortcites,sorting=ynt,uniquename=false]{biblatex}
 \DeclareLanguageMapping{english}{english-mpi}
 \defbibheading{bibliography}[References]{\section{#1}}
 \newcommand{\citet}{\cite}
@@ -672,7 +672,7 @@ journal = \@charlb {\@reportseries} \@reportno \@charrb,^^J%
 %    \begin{macrocode}
 %<*mpi-aebr|mpi-far>
 \g@addto@macro\appendices{
-\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{\thesection}{1em}{APPENDIX \thesection: }
+\titleformat{\section}{\normalfont\bfseries\sffamily\uppercase}{}{0em}{APPENDIX \thesection: }
 \renewcommand{\theequation}{\thesection-\arabic{equation}}
 \renewcommand{\thetable}{\thesection-\arabic{table}}
 \renewcommand{\thefigure}{\thesection-\arabic{figure}}
