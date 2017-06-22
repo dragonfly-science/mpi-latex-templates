@@ -8,7 +8,7 @@ all: package/.build
 examples/mpi-far.pdf: examples/mpi-far.tex examples/test.bib latex/mpi.pdf graphics/FAR.jpg clean_examples
 	$(RUN) bash -c "cd examples && xelatex mpi-far && biber mpi-far && xelatex mpi-far"
 
-latex/mpi.pdf: latex/mpi.dtx latex/mpi.ins clean_latex
+latex/mpi.pdf: latex/mpi.dtx latex/mpi.ins clean
 	$(RUN) bash -c "cd latex && latex mpi.ins"
 	$(RUN) bash -c "cd latex && xelatex mpi.dtx"
 
