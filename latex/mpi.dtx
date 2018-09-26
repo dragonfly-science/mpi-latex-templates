@@ -679,7 +679,7 @@ This publication is also available on the Ministry for Primary Industries websit
 % need to print out the command rather than actually do emphasis.
 %
 %    \begin{macrocode}
-%<*mpi-aebr|mpi-far|mpi-plenary>
+%<*mpi-aebr|mpi-far>
 \RequirePackage{lastpage}
 \AtBeginDocument{
 {
@@ -700,7 +700,29 @@ journal = \@charlb {\@reportseries} \@reportno \@charrb,^^J%
 \immediate\closeout\tempfile
 }
 }
-%</mpi-aebr|mpi-far|mpi-plenary>
+%</mpi-aebr|mpi-far>
+%<*mpi-plenary>
+\RequirePackage{lastpage}
+\AtBeginDocument{
+{
+\renewcommand{\and}{ and }
+\renewcommand{\emph}[1]{\@backslashchar emph\@charlb #1\@charrb}
+\renewcommand{\\}{}
+\edef\text{@book\@charlb this,^^J%
+options = \@charlb skipbib \@charrb,^^J%
+year = \@charlb \@date \@charrb,^^J%
+title = \@charlb \@title \@charrb,^^J%
+author = \@charlb \@author \@charrb,^^J%
+journal = \@charlb {\@reportseries} \@reportno \@charrb,^^J%
+\@charrb
+}
+\newwrite\tempfile
+\immediate\openout\tempfile=\jobname-self.bib
+\immediate\write\tempfile{\text}
+\immediate\closeout\tempfile
+}
+}
+%</mpi-plenary>
 %    \end{macrocode}
 %
 %
