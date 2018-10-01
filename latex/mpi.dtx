@@ -582,10 +582,14 @@ This publication is also available on the Ministry for Primary Industries websit
 % used in report and AEBR.
 %
 %    \begin{macrocode}
-%<*mpi-aebr|mpi-far|mpi-plenary>
+%<*mpi-aebr|mpi-far>
 \let\dfly@contentsline=\contentsline
 \renewcommand\contentsline[4]{\dfly@contentsline{#1}{\ifstrequal{#1}{section}{\MakeUppercase{#2}}{#2}}{#3}{#4}}
-%</mpi-aebr|mpi-far|mpi-plenary>
+%</mpi-aebr|mpi-far>
+%<*mpi-plenary>
+\let\dfly@contentsline=\contentsline
+\renewcommand\contentsline[4]{\dfly@contentsline{#1}{\ifstrequal{#1}{section}{#2}{#2}}{#3}{#4}}
+%</mpi-plenary>
 %    \end{macrocode}
 %
 % The table of contents should have it's own page. And since it is printed it should
