@@ -19,12 +19,15 @@ examples/mpi-far.pdf: examples/mpi-far.tex examples/test.bib latex/mpi.pdf graph
 examples/mpi-plenary.pdf: examples/mpi-plenary.tex examples/test.bib latex/mpi.pdf graphics/PLENARY.jpg clean_examples
 	$(RUN) bash -c "cd examples && xelatex mpi-plenary && biber mpi-plenary && xelatex mpi-plenary && xelatex mpi-plenary"
 
+examples/mpi-aebr.pdf: examples/mpi-aebr.tex examples/test.bib latex/mpi.pdf graphics/AEBR.jpg clean_examples
+	$(RUN) bash -c "cd examples && xelatex mpi-aebr && biber mpi-aebr && xelatex mpi-aebr && xelatex mpi-aebr"
+
 latex/mpi.pdf: latex/mpi.dtx latex/mpi.ins clean_latex
 	$(RUN) bash -c "cd latex && latex mpi.ins"
 	$(RUN) bash -c "cd latex && xelatex mpi.dtx"
 
 .PRECIOUS: package/.build
-package/.build: examples/mpi-far.pdf examples/mpi-plenary.pdf
+package/.build: examples/mpi-far.pdf examples/mpi-plenary.pdf examples/mpi-aebr.pdf
 	$(RUN) bash -c "cd package && debuild -us -uc && mv ../mpi-latex*{.dsc,.changes,.build,tar.xz} . && touch .build"
 
 .PHONY: clean
