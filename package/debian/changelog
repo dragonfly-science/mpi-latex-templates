@@ -1,3 +1,9 @@
+mpi-latex-templates (1.62) jammy; urgency=medium
+
+  * add justification - see issue #49
+
+ -- Hayley Wikeepa <hayley@dragonfly.co.nz>  Mon, 05 May 2025 12:55:52 +1200
+
 mpi-latex-templates (1.61) jammy; urgency=medium
 
   * Define \nffamily and use Arial Narrow for footers (as well as the AEBR cover)
