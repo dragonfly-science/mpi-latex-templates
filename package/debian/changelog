@@ -1,3 +1,9 @@
+mpi-latex-templates (1.63) jammy; urgency=medium
+
+  * add caption justification - see issue #49
+
+ -- Hayley <hayley@dragonfly.co.nz>  Mon, 05 May 2025 14:23:46 +1200
+
 mpi-latex-templates (1.62) jammy; urgency=medium
 
   * add justification - see issue #49
