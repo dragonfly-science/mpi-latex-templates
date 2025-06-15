@@ -1,3 +1,9 @@
+mpi-latex-templates (1.64) jammy; urgency=medium
+
+  * set Plain language summary to uppercase - see issue 51
+
+ -- Hayley <hayley@Piwaiwaka>  Mon, 16 Jun 2025 10:28:16 +1200
+
 mpi-latex-templates (1.63) jammy; urgency=medium
 
   * add caption justification - see issue #49
