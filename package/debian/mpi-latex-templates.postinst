@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ "$(/usr/bin/biber --version)" = "biber version: 2.17" ]; then
+if [ "$(/usr/bin/biber --version)" = "biber version: 2.17" ] || [ "$(/usr/bin/biber --version)" = "biber version: 2.19" ]; then
     TEXMFLOCAL=/usr/local/share/texmf
     echo copying apa.bbx into $TEXMFLOCAL
     mkdir -p ${TEXMFLOCAL}/tex/latex/
     cp -r /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa ${TEXMFLOCAL}/tex/latex/
-    echo patching apa.bbx to work with biber 2.17
+    echo patching apa.bbx to work with biber 2.17 and 2.19
     perl -p -e 's/usenarrator=true/} % usenarrator=true/' /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.bbx > ${TEXMFLOCAL}/tex/latex/biblatex-apa/apa.bbx
     echo patching apa.bbx to disable "(APA 10.2:32) Remove PUBLISHER if it is the same as AUTHOR"
     perl -pi -e 's/(\\step\[fieldset=publisher, null\])/%% \1/' ${TEXMFLOCAL}/tex/latex/biblatex-apa/apa.bbx
