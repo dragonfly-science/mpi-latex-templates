@@ -1,3 +1,9 @@
+mpi-latex-templates (1.65) jammy; urgency=medium
+
+  * shrink size of AEBR cover page
+
+ -- Yvan <yvan@dragonfly.co.nz>  Wed, 29 Apr 2026 10:00:00 +1200
+
 mpi-latex-templates (1.64) jammy; urgency=medium
 
   * set Plain language summary to uppercase - see issue 51
